@@ -44,4 +44,3 @@ class TestViews(TestCase):
         self.assertRedirects(response, '/')
         updated_item = Item.objects.get(id=item.id)
         self.assertEqual(updated_item.name, 'Updated')
-        
